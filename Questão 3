@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Pedro Martins">
+    <title>Questão 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(13, 14, 27);
+        }
+        .tela-contato {
+            background-color: white;
+            color: red;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #nome {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        #email {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box; 
+        }
+        #mensagem {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            padding: 10px;
+            height: 100px;
+            margin: 10px 0;
+            box-sizing: border-box; 
+        }
+        #enviar{
+            background-color: rgb(173, 126, 71);
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+        #enviar:hover {
+            background-color: rgb(114, 83, 47);
+        }
+        #validacao {
+            margin-top: 15px;
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="tela-contato">
+        <h2>Formulário de Contato</h2>
+        <form id="contato">
+            <input type="text" id="nome" placeholder="Nome" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <textarea id="mensagem" placeholder="Sua mensagem..." required></textarea><br>
+            <input type="submit" id="enviar" value="Enviar">
+        </form>
+        <p id="validacao"></p>
+    </div>
+
+    <script>
+        document.getElementById('contato').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            let nome = document.getElementById('nome').value;
+            let email = document.getElementById('email').value;
+            let mensagem = document.getElementById('mensagem').value;
+            let validacao = document.getElementById('validacao');
+    
+            if (!nome || !email || !mensagem) 
+            {
+                validacao.textContent = 'Preencha todos os campos!';
+            }
+            else
+            {
+                validacao.textContent = 'Formulário enviado!';
+            }
+        });
+    </script>
+</body>
+</html>
