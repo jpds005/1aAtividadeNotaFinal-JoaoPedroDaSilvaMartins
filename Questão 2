@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Pedro Martins">
+    <title>Questão 2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            background-color: rgb(13, 14, 27);
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 50vh;
+            padding: 10%;
+            display: flex;
+        }
+        .Nome{
+            color: white;
+        }
+        .Cabecalho{
+            background-color: green;
+            color: darkgrey;
+        }
+        .Par{
+            background-color: white;
+        }
+        .Impar{
+            background-color: rgb(207, 207, 207);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Nome">Tabela de Produtos</h1>
+    <table>
+        <tr class="Cabecalho"> 
+            <th> Nome </th>
+            <th> Categoria </th>
+            <th> Descrição </th>
+            <th> Preço (R$) </th>
+        </tr>
+        <tr class="Par">
+            <td> Notebook </td>
+            <td> Eletrônico </td>
+            <td> Computador portátil com 8GB de RAM  e 256GB SSD </td>
+            <td> 3.500,00 </td>
+        </tr>
+        <tr class="Impar">
+            <td> Smartphone </td>
+            <td> Eletrônico </td>
+            <td> Celular com câmera de 48MP e 128GB de armazenamento </td>
+            <td> 2.200,00 </td>
+        </tr>
+        <tr class="Par">
+            <td> Monitor </td>
+            <td> Eletrônico </td>
+            <td> Monitor de 24 polegadas com resolução Full HD </td>
+            <td> 800,00 </td>
+        </tr>
+        <tr class="Impar">
+            <td> Teclado </td>
+            <td> Eletrônico </td>
+            <td> Teclado mecânico com iluminação RGB </td>
+            <td> 250,00 </td>
+        </tr>
+        <tr class="Par">
+            <td> Mouse </td>
+            <td> Eletrônico </td>
+            <td> Mouse sem fio com sensor óptico de alta precisão </td>
+            <td> 120,00 </td>
+        </tr>
+    </table>
+</body>
+</html>
