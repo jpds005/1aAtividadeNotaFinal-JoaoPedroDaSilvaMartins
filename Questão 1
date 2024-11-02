@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Pedro Martins">
+    <title>Questão 1</title>
+    <style>
+        body{
+            background-color: rgb(13, 14, 27);
+            color:rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            font-size: 100%;
+            text-align: center;
+            padding: 14%;
+        }
+        .corpo{
+            background-color: rgba(235, 235, 235, 0.897);
+            border-radius: 25px;
+        }
+        #foto{
+            padding: 25px;
+            border-radius: 1000px;
+            width: auto;
+        }
+        #nome{
+            color: green;
+        }
+        #texto{
+            padding: 10px;
+        }
+        .itens{
+            display: flex;
+            justify-content: space-around;
+        }
+        .linguas{
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .links{
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            color: green;
+        }
+        a:hover {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="corpo">
+        <img  id="foto" src="https://media.licdn.com/dms/image/v2/D4D03AQEi5eBNH5Riyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715809026858?e=1735776000&v=beta&t=OmvX76F_OifeHmd5S1lH9Z-O5YwcZ8bWFXlNsukcMCU" alt="Logo da W3Schools" width="404" height="316">
+        <h1 id="nome">João Pedro da Silva Martins<br>
+        Matrícula - 202404083241</h1>
+        <h2>Desenvolvedor Web<br>
+        Ciência da Computação</h2>
+        <h3 id="texto">Olá! Meu nome é João e sou apaixonado por tecnologia e desenvolvimento web.<br>
+            Tenho experiência em HTML, CSS, JavaScript e outras tecnologias modernas.<br>
+            Adoro criar páginas bonitas e funcionais que proporcionam uma ótima experiência ao usuário.
+        </h3>
+        <div class="itens">
+            <h3 class="linguas">HTML</h3>
+            <h3 class="linguas">CSS</h3>
+            <h3 class="linguas">JavaScript</h3>
+            <h3 class="linguas">PHP</h3>
+        </div><br>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-martins-486b3b305/" target="_blank"><h3>Linkedin</h3></a>
+            <a href="https://github.com/jpds005" target="_blank"><h3>GitHub</h3></a>
+        </div><br>
+    </div>
+</body>
+</html>
